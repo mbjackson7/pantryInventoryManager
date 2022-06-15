@@ -2,17 +2,19 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   height: 15vh;
   width: 90%;
   border: 2px solid black;
   margin-top: 1vw;
-  gap: 3vw;
+  gap: 5vw;
+  background-color: #282c34;
 }
 
 .ThumbnailBox {
   position: relative;
   width: 15vh;
+  margin-right: 3%;
 }
 
 .ThumbnailBox:after {
@@ -26,6 +28,10 @@
   position: absolute;
   width: 100%;
   height: 100%;
+}
+
+.DataItem{
+    width: 20vw;
 }
 
 .List {

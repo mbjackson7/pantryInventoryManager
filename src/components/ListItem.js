@@ -9,7 +9,9 @@ function ListItem(props) {
       <div className='ThumbnailBox'>
         <img src={data.image} alt="" className='Thumbnail'/>
       </div>
-      <p>Test</p>
+      <p className='DataItem'>{data.name}</p>
+      <p className='DataItem'>{data.quantity}x</p>
+      <p className='DataItem'>{data.notes}</p>
 
     </div>
   );
