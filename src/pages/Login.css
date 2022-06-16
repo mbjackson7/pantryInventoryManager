@@ -10,15 +10,16 @@
 }
 
 .PinBox {
-  width: 30vw;
-  height: 5vw;
-  margin: 4vh;
-  font-size: calc(10px + 2vmin);
+  width: 30vmin;
+  min-width: 12vmax;
+  height: 5vmax;
+  margin: 4vmin;
+  font-size: 5vmax;
 }
 
 .Button {
-  width: 20vw;
+  width: auto;
   height: auto;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(18px + 1vw);
   margin-bottom: 20vh;
 }

@@ -1,31 +1,53 @@
 import { useEffect, useState } from 'react';
-import '../App.css';
+import './Home.css';
 import List from '../components/List';
 import React from 'react';
 import db from "../firebase";
-import { doc, collection, onSnapshot, query } from "firebase/firestore";
+import { collectionGroup, onSnapshot, query, getDocs } from "firebase/firestore";
 
 function Home() {
   const [data, setData] = useState([]);
   useEffect(() => {
     const fetchData = async () =>  {
-      const q = query(collection(db, "pantry"))
-      return onSnapshot(q, (querySnapshot) => {
-      console.log("Data", querySnapshot.docs.map(d => doc.data()));
-    });
+      const q = query(collectionGroup(db, "pantry"));
+      const unsubscribe = onSnapshot(q, (snapshot) => {
+        const documents = [];
+        snapshot.forEach((doc) => {
+          documents.push(doc.data());
+        });
+        setData(documents)
+        console.log("Data Fetched")
+      });
     }
-    fetchData().then(newData => {
-      setData(newData);
-      console.log(data);
-    });
-    console.log(data);
+    fetchData()
   }, []);
+
+  function alphabatize() {
+    var sorted = data.sort(function(a, b) {
+      var nameA = a.brand_name.toUpperCase(); // ignore upper and lowercase
+      var nameB = b.brand_name.toUpperCase(); // ignore upper and lowercase
+      if (nameA < nameB) {
+        return -1;
+      }
+      if (nameA > nameB) {
+        return 1;
+      }
+      // names must be equal
+      return 0;
+    }
+    );
+    setData(sorted)
+    console.log("Data Alphabetized")
+  }
 
   return (
     <div className="App">
       <header className="App-header">
-        <h3>My Pantry</h3>
-        <List data="None"/>
+        <div>
+          <h3>My Pantry</h3>
+          <button onClick={alphabatize}>Alphabetize</button>
+        </div>
+        <List data={data}/>
       </header>
       
     </div>

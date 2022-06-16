@@ -11,10 +11,19 @@
   background-color: #282c34;
 }
 
+.Background {
+  position: relative;
+  height: 15vh;
+  width: 15vh;
+  min-width: 10vh;
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+
 .ThumbnailBox {
   position: relative;
-  width: 15vh;
-  margin-right: 3%;
+  width: 100%;
 }
 
 .ThumbnailBox:after {
@@ -31,7 +40,14 @@
 }
 
 .DataItem{
-    width: 20vw;
+  min-width: max(20vw, 15vh);
+  width: 30vmin;
+  font-size: calc(6px + 2vmin);
+}
+
+.QuantityBox{
+  width: 12vmin;
+  font-size: calc(6px + 2vmin);
 }
 
 .List {

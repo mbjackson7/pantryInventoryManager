@@ -4,7 +4,7 @@ import "./Login.css";
 import db from "../firebase";
   
 function Login() {
-  const userName = "admin";
+  const userName = "admin@404.net";
   const [userPassword, setUserPassword] = useState("");
   const navigate = useNavigate();
 
