@@ -3,6 +3,7 @@ import Login from './pages/Login';
 import Home from './pages/Home';
 import './App.css';
 import React from 'react';
+import ReceiptScanner from './pages/ReceiptScanner';
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Login />}/>
         <Route path="/home" element={<Home />}/>
+        <Route path="/scanner" element={<ReceiptScanner />}/>
       </Routes>
     </Router>
   );

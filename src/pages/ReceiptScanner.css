@@ -1,0 +1,17 @@
+.App {
+  text-align: left;
+}
+
+.App-header {
+  background-color: #833b37;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.Button {
+  margin-top: 1vh;
+  font-size: 5vh;
+}
