@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/pantryInventoryManager/static/css/main.0b515d19.css",
-    "main.js": "/pantryInventoryManager/static/js/main.15a76260.js",
+    "main.js": "/pantryInventoryManager/static/js/main.dc3491db.js",
     "static/js/787.b42c235b.chunk.js": "/pantryInventoryManager/static/js/787.b42c235b.chunk.js",
     "index.html": "/pantryInventoryManager/index.html",
     "main.0b515d19.css.map": "/pantryInventoryManager/static/css/main.0b515d19.css.map",
-    "main.15a76260.js.map": "/pantryInventoryManager/static/js/main.15a76260.js.map",
+    "main.dc3491db.js.map": "/pantryInventoryManager/static/js/main.dc3491db.js.map",
     "787.b42c235b.chunk.js.map": "/pantryInventoryManager/static/js/787.b42c235b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0b515d19.css",
-    "static/js/main.15a76260.js"
+    "static/js/main.dc3491db.js"
   ]
 }
