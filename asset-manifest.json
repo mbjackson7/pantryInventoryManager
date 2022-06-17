@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/pantryinventorymanager/static/css/main.0b515d19.css",
-    "main.js": "/pantryinventorymanager/static/js/main.d6bcb15c.js",
-    "static/js/787.b42c235b.chunk.js": "/pantryinventorymanager/static/js/787.b42c235b.chunk.js",
-    "index.html": "/pantryinventorymanager/index.html",
-    "main.0b515d19.css.map": "/pantryinventorymanager/static/css/main.0b515d19.css.map",
-    "main.d6bcb15c.js.map": "/pantryinventorymanager/static/js/main.d6bcb15c.js.map",
-    "787.b42c235b.chunk.js.map": "/pantryinventorymanager/static/js/787.b42c235b.chunk.js.map"
+    "main.css": "/pantryInventoryManager/static/css/main.0b515d19.css",
+    "main.js": "/pantryInventoryManager/static/js/main.15a76260.js",
+    "static/js/787.b42c235b.chunk.js": "/pantryInventoryManager/static/js/787.b42c235b.chunk.js",
+    "index.html": "/pantryInventoryManager/index.html",
+    "main.0b515d19.css.map": "/pantryInventoryManager/static/css/main.0b515d19.css.map",
+    "main.15a76260.js.map": "/pantryInventoryManager/static/js/main.15a76260.js.map",
+    "787.b42c235b.chunk.js.map": "/pantryInventoryManager/static/js/787.b42c235b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0b515d19.css",
-    "static/js/main.d6bcb15c.js"
+    "static/js/main.15a76260.js"
   ]
 }
