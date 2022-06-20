@@ -1,6 +1,7 @@
 import './ReceiptScanner.css';
 import React from 'react';
 import Webcam from "react-webcam";
+import { setImage } from '../firebaseInterface';
 const WebcamComponent = () => <Webcam />;
 
 
@@ -8,6 +9,7 @@ function ReceiptScanner() {
 
   async function handleClick(imageData) {
     console.log(imageData);
+    console.log(await setImage(imageData));
   }
 
   const videoConstraints = {
